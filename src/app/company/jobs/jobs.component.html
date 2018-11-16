@@ -1,3 +1,14 @@
-<p>
-  jobs works!
-</p>
+<mat-card class="col-sm-12">
+  <mat-card-header>
+    <mat-card-title>Manage Jobs</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form [formGroup]="form" (ngSubmit)="submit(model)">
+      <formly-form [form]="form" [fields]="fields" [model]="model">
+        <div class="text-center">
+          <button type="submit" mat-raised-button color="primary">Submit</button>
+        </div>
+      </formly-form>
+    </form>
+  </mat-card-content>
+</mat-card>

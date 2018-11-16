@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FieldType } from '@ngx-formly/core';
 
 @Component({
-	selector: 'app-job-list',
+	selector: 'app-apps-list',
 	template: `
    
     <div class="list-item row" *ngFor="let folder of model.folders">
@@ -15,10 +15,10 @@ import { FieldType } from '@ngx-formly/core';
     <p mat-line> {{folder.updated}} </p>
     </div>
     <div class="col-sm-2">
-    <button type="button" [routerLink]="['/jobinfo',2]"  mat-raised-button color="primary" >Apply</button>
+    <button type="button" [routerLink]="['/userinfo',2,3]"  mat-raised-button color="primary" >Apply</button>
     </div>
     </div>
    
     `
 })
-export class JobListComponent extends FieldType {}
+export class AppListComponent extends FieldType {}

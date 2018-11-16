@@ -35,7 +35,12 @@ html {
   margin-bottom: 10px;
 }
 
-.mat-divider {
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
+
+.list-item{
+  border-bottom: 1px solid #f5eeee;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.list-item button{
+  margin-top:25px;
 }
